@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Michigurumis</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+ <div class="logo">
+    <img src="imagenes/logo.png" alt="Logo de Michigurumis Chenille">
+    <span>MICHIGURUMIS CHENILLE</span>
+</div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#elaboracion">Elaboración</a>
+        <div class="menu-proyecto">
+    <a href="#proyecto">Proyecto ▾</a>
+
+    <div class="submenu">
+        <a href="#motivacion">Motivación</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#metas">Metas</a>
+        <a href="#mision">Misión</a>
+        <a href="#mercado">Mercado</a>
+        <a href="#costos">Costos</a>
+    </div>
+</div>
+        <a href="#contacto">Contacto</a>
+
+<div class="busqueda">
+    <input type="text" id="buscador-productos" class="buscador" placeholder="Buscar productos...">
+    <button type="button" id="boton-buscar" aria-label="Buscar productos">🔍</button>
+</div>
+<button type="button" class="carrito" id="abrir-carrito">
+    🛒 0
+</button>
+    </nav>
+</header>
+
+<h1>
+    <span>Bienvenidos a</span>
+    <span>Michigurumis Chenille</span>
+</h1>
+
+   <p class="subtitulo">Pequeños detalles tejidos a mano.</p>
+<div class="botones">
+    <a href="#nosotros">Conocer Michigurumis Chenille</a>
+    <a href="#productos">Ver productos</a>
+</div>
+
+<div class="tarjetas-informativas">
+
+    <a href="#nosotros" class="tarjeta">
+        <strong>Nuestra historia</strong>
+        <span>Cómo nació la idea.</span>
+    </a>
+
+    <a href="#productos" class="tarjeta">
+        <strong>Productos destacados</strong>
+        <span>Los más populares.</span>
+    </a>
+
+    <a href="#elaboracion" class="tarjeta">
+        <strong>Nuestro proceso</strong>
+        <span>De la lana al resultado.</span>
+    </a>
+
+</div>
+<!-- SECCIÓN NOSOTROS -->
+<section id="nosotros" class="seccion-nosotros">
+
+    <h2>Nosotros</h2>
+    <p class="frase-nosotros">
+        Pequeños detalles, grandes emociones.
+    </p>
+
+    <div class="contenido-nosotros">
+
+        <div class="texto-nosotros">
+            <h3>Michigurumis Chenille</h3>
+
+            <p>
+                Es un emprendimiento artesanal que nace de mi
+                pasión por el tejido y mi gusto por los amigurumis
+                elaborados con lana chenille, cuya suavidad y
+                ternura los hacen especiales.
+            </p>
+
+            <p>
+                El proyecto busca dar a conocer estos muñecos
+                tejidos a mano en el municipio de Batallas,
+                ofreciendo productos creativos, originales
+                y elaborados con cariño y dedicación.
+            </p>
+        </div>
+
+        <div class="imagen-nosotros">
+            <img src="imagenes/nosotros.jpg"
+                 alt="Amigurumi tejido a mano">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SECCIÓN PRODUCTOS -->
+<section id="productos" class="seccion-productos">
+
+    <h2>Nuestros productos</h2>
+    <p class="frase-productos">
+        Amigurumis tejidos a mano con mucho cariño.
+    </p>
+
+    <div class="rejilla-productos">
+
+        <article class="producto producto-inicial">
+           <div class="foto-producto">
+    <img src="imagenes/ranitas.jpg" alt="Amigurumis de ranitas">
+</div>
+            <h3>Ranitas</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 6</p>
+            <button onclick="agregarAlCarrito('Ranitas', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto producto-inicial">
+           <div class="foto-producto">
+    <img src="imagenes/nutrias.jpg" alt="Amigurumis de nutrias">
+</div>
+            <h3>Nutrias</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 4</p>
+            <button onclick="agregarAlCarrito('Nutrias', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto producto-inicial">
+           <div class="foto-producto">
+    <img src="imagenes/gatos-honguitos.jpg" alt="Gatos honguitos tejidos a mano">
+</div>
+            <h3>Gatos honguitos</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 6</p>
+            <button onclick="agregarAlCarrito('Gatos honguitos', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto producto-inicial">
+           <div class="foto-producto">
+    <img src="imagenes/ovejitas.jpg" alt="Ovejitas tejidas a mano">
+</div>
+            <h3>Ovejitas</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Ovejitas', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+           <div class="foto-producto">
+    <img src="imagenes/hurones.jpg" alt="Hurones tejidos a mano">
+</div>
+            <h3>Hurones</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Hurones', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <div class="foto-producto">
+    <img src="imagenes/gatitos-manchados.jpg" alt="Gatitos manchados tejidos a mano">
+</div>
+            <h3>Gatitos manchados</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Gatitos manchados', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <div class="foto-producto">
+    <img src="imagenes/vaquitas.jpg" alt="Vaquitas tejidas a mano">
+</div> >
+            <h3>Vaquitas</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Vaquitas', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto"><div class="foto-producto">
+    <img src="imagenes/estrellitas.jpg" alt="Estrellitas tejidas a mano">
+</div>
+            <h3>Estrellitas</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Estrellitas', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+          <div class="foto-producto">
+    <img src="imagenes/cuis.jpg" alt="Cuís tejidos a mano">
+</div>
+            <h3>Cuís</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Cuís', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <div class="foto-producto">
+    <img src="imagenes/abejitas.jpg" alt="Abejitas tejidas a mano">
+</div>
+            <h3>Abejitas</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 4</p>
+            <button onclick="agregarAlCarrito('Abejitas', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+           <div class="foto-producto">
+    <img src="imagenes/teddy.jpg" alt="Osito Teddy tejido a mano">
+</div>
+            <h3>Teddy</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponible: 1</p>
+            <button onclick="agregarAlCarrito('Teddy', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+           <div class="foto-producto">
+    <img src="imagenes/jigglypuff.jpg" alt="Jigglypuff tejido a mano">
+</div>
+            <h3>Jigglypuff</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Jigglypuff', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+         <div class="foto-producto">
+    <img src="imagenes/corazones.jpg" alt="Corazones tejidos a mano">
+</div>
+            <h3>Corazones</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Corazones', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <div class="foto-producto">
+    <img src="imagenes/flores.jpg" alt="Flores tejidas a mano">
+</div>
+            <h3>Flores</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Flores', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+            <div class="foto-producto">
+    <img src="imagenes/pulpos.jpg" alt="Pulpos tejidos a mano">
+</div>
+            <h3>Pulpos</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Pulpos', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+         <div class="foto-producto">
+    <img src="imagenes/pinguinos.jpg" alt="Pingüinos tejidos a mano">
+</div>
+            <h3>Pingüinos</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Pingüinos', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+           <div class="foto-producto">
+    <img src="imagenes/ajolotes.jpg" alt="Ajolotes tejidos a mano">
+</div>
+            <h3>Ajolotes</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 2</p>
+            <button onclick="agregarAlCarrito('Ajolotes', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article class="producto">
+          <div class="foto-producto">
+    <img src="imagenes/pollitos.jpg" alt="Pollitos tejidos a mano">
+</div>
+            <h3>Pollitos</h3>
+            <p class="precio">Bs 15</p>
+            <p>Disponibles: 4</p>
+            <button onclick="agregarAlCarrito('Pollitos', 15)">
+                Agregar al carrito
+            </button>
+        </article>
+
+<div class="contenedor-ver-mas">
+    <button id="boton-ver-mas" onclick="verMasProductos()">
+        Ver más productos ↓
+    </button>
+</div>
+
+</section>
+
+<!-- SECCIÓN ELABORACIÓN -->
+<section id="elaboracion" class="seccion-elaboracion">
+
+    <h2>Nuestro proceso artesanal</h2>
+
+    <p class="frase-elaboracion">
+        Cada puntada está hecha con cariño y dedicación.
+    </p>
+
+    <div class="pasos-elaboracion">
+
+        <article class="paso-elaboracion">
+            <div class="icono-paso">🧶</div>
+            <h3>1. Materiales</h3>
+            <p>
+                Elegimos la lana chenille y los materiales
+                necesarios para crear nuestros amigurumis.
+            </p>
+        </article>
+
+        <article class="paso-elaboracion">
+            <div class="icono-paso">🪡</div>
+            <h3>2. Tejido</h3>
+            <p>
+                Tejemos cada pieza a mano con paciencia,
+                cuidado y dedicación.
+            </p>
+        </article>
+
+        <article class="paso-elaboracion">
+            <div class="icono-paso">🧸</div>
+            <h3>3. Armado</h3>
+            <p>
+                Unimos las piezas, colocamos el relleno
+                y damos forma a cada muñeco.
+            </p>
+        </article>
+
+        <article class="paso-elaboracion">
+            <div class="icono-paso">💗</div>
+            <h3>4. Acabados</h3>
+            <p>
+                Revisamos los detalles y dejamos cada
+                amigurumi listo para su presentación.
+            </p>
+        </article>
+
+    </div>
+
+  <div class="video-elaboracion">
+    <h3>Mira cómo los elaboramos</h3>
+    <p>
+        Descubre el amor y la dedicación
+        detrás de cada uno de nuestros amigurumis.
+    </p>
+
+    <div class="espacio-video">
+        <video controls width="100%">
+            <source src="videos/elaboracion.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </div>
+</div>
+
+</section>
+
+<!-- SECCIÓN PROYECTO -->
+<section id="proyecto" class="seccion-proyecto">
+
+    <h2>Nuestro proyecto</h2>
+
+    <p class="frase-proyecto">
+        Un emprendimiento artesanal creado con creatividad,
+        esfuerzo y mucho cariño.
+    </p>
+
+    <div class="rejilla-proyecto">
+
+        <article class="tarjeta-proyecto" id="motivacion">
+            <div class="icono-proyecto">💗</div>
+            <h3>Motivación</h3>
+            <p>
+                Mi emprendimiento nace de mi pasión por tejer,
+                mi deseo de ganar mi propio dinero y mi ilusión
+                de convertir mi pasatiempo en un negocio.
+            </p>
+        </article>
+
+        <article class="tarjeta-proyecto" id="objetivos">
+            <div class="icono-proyecto">🎯</div>
+            <h3>Objetivos</h3>
+            <p>
+                Crear una página web que permita mostrar mis
+                amigurumis, promocionar mi emprendimiento y
+                facilitar las ventas por internet.
+            </p>
+        </article>
+
+        <article class="tarjeta-proyecto" id="metas">
+            <div class="icono-proyecto">🌟</div>
+            <h3>Metas</h3>
+            <p>
+                Dar a conocer Michigurumis Chenille, aumentar
+                las ventas, conseguir más clientes, ampliar la
+                variedad de amigurumis y lograr que mi negocio
+                sea reconocido.
+            </p>
+        </article>
+
+        <article class="tarjeta-proyecto" id="mision">
+            <div class="icono-proyecto">🧶</div>
+            <h3>Misión</h3>
+            <p>
+                Ofrecer amigurumis tejidos a mano, bonitos y
+                originales, elaborados con dedicación, brindando
+                buena atención y creando detalles especiales
+                para personas de todas las edades.
+            </p>
+        </article>
+
+        <article class="tarjeta-proyecto" id="mercado">
+            <div class="icono-proyecto">🌎</div>
+            <h3>Mercado</h3>
+            <p>
+                Mi emprendimiento está dirigido a personas de
+                todas las edades en Bolivia. Mediante la página
+                web, quiero llegar a clientes de diferentes
+                lugares del país.
+            </p>
+        </article>
+
+        <article class="tarjeta-proyecto" id="costos">
+            <div class="icono-proyecto">💰</div>
+            <h3>Costos</h3>
+            <p>
+                Actualmente, cada amigurumi tiene un precio de
+                venta de Bs 15. También es importante considerar
+                el costo de los materiales, el tiempo de tejido
+                y otros gastos.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="seccion-contacto">
+
+    <h2>¡Conectemos! 💗</h2>
+
+    <p class="frase-contacto">
+        Síguenos en nuestras redes y descubre
+        nuestros pequeños detalles tejidos a mano.
+    </p>
+
+    <div class="redes-contacto">
+
+        <a class="boton-red boton-tiktok"
+           href="https://www.tiktok.com/@maday5609"
+           target="_blank" rel="noopener noreferrer">
+            🎵 TikTok
+            <span>@maday5609</span>
+        </a>
+
+        <a class="boton-red boton-facebook"
+           href="https://www.facebook.com/share/1H41FHkEyw/"
+           target="_blank" rel="noopener noreferrer">
+            📘 Facebook
+            <span>Visita nuestro perfil</span>
+        </a>
+
+        <a class="boton-red boton-whatsapp"
+           href="https://wa.me/59174653974"
+           target="_blank" rel="noopener noreferrer">
+            💬 WhatsApp
+            <span>¡Haz tu pedido aquí!</span>
+        </a>
+
+    </div>
+
+    <div class="ubicacion-contacto">
+        📍 Batallas, La Paz, Bolivia
+        <p>Amigurumis tejidos a mano con cariño y dedicación. 🧶</p>
+    </div>
+
+</section>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<button id="volver-arriba" aria-label="Volver arriba"
+        title="Volver arriba">
+    ↑
+</button>
+
+<!-- VENTANA DEL CARRITO -->
+<div id="ventana-carrito" class="ventana-carrito">
+    <div class="contenido-carrito">
+        <button type="button" id="cerrar-carrito" class="cerrar-carrito">✕</button>
+
+        <h2>Mi carrito 🧸</h2>
+
+        <div id="lista-carrito"></div>
+
+        <p class="total-carrito">
+            Total: <strong id="total-carrito">Bs 0</strong>
+        </p>
+
+        <button type="button" id="vaciar-carrito">
+            Vaciar carrito
+        </button>
+
+        <button type="button" id="comprar-whatsapp">
+            Pedir por WhatsApp
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
